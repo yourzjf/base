@@ -13,7 +13,9 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>corejava</module>
 		<module>yourzjf-sso</module>
+		<module>yourzjf-corejava</module>
 	</modules>
 
 	<properties>
