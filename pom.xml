@@ -16,6 +16,7 @@
 		<module>corejava</module>
 		<module>yourzjf-sso</module>
 		<module>yourzjf-corejava</module>
+		<module>yourzjf-myweb</module>
 	</modules>
 
 	<properties>
