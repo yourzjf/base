@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.apache.commons.io.FileUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -23,6 +24,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import net.yourzjf.myweb.UserException;
 import net.yourzjf.myweb.bean.User;
+import net.yourzjf.myweb.service.UserService;
 
 /**
  * Bean类上的RequestMapping("/user")是Controller的命名空间，访问该Bean的Mapping时需要加上/user
@@ -34,6 +36,9 @@ import net.yourzjf.myweb.bean.User;
 @RequestMapping("/user")
 // @Scope("prototype") //Spring 管理的 Controller 默认是单例的，如不加Scope，成员变量的值会受到其他请求的污染
 public class UserController extends ControllerHandler {
+	
+	@Autowired
+	private UserService userService;
 
 	private Map<String, User> users = null;
 
