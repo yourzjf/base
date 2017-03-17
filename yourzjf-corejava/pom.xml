@@ -8,9 +8,7 @@
 		<artifactId>base</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
 	<artifactId>yourzjf-corejava</artifactId>
-
 	<name>yourzjf-corejava</name>
 
 	<properties>
