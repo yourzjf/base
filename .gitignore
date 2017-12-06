@@ -19,5 +19,8 @@ hs_err_pid*
 .project
 .classpath
 
-# Intellij idea
+# IntelliJ project files
 .idea
+*.iml
+out
+gen
