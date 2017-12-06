@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 
-	<name>myweb</name>
+	<name>yourzjf-myweb</name>
 	<url>http://myweb.yourzjf.net</url>
 	<description>SpringMVC / MyBaits / MySQL 演示</description>
 
@@ -189,10 +189,8 @@
 				<configuration>
 					<uriEncoding>UTF-8</uriEncoding>
 					<path>/</path>
-					<port>${port}</port>
+					<port>8080</port>
 					<protocol>org.apache.coyote.http11.Http11NioProtocol</protocol>
-					<maxThreads>1000</maxThreads>
-					<minSpareThreads>100</minSpareThreads>
 				</configuration>
 			</plugin>
 		</plugins>
