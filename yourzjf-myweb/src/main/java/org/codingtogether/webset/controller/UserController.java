@@ -42,7 +42,7 @@ public class UserController extends ControllerHandler {
     private Map<String, User> users = null;
 
     {
-        users = new HashMap<String, User>();
+        users = new HashMap<>();
         users.put("aa", new User("aa", "111111", "aa@aa.aa"));
         users.put("bb", new User("bb", "222222", "bb@bb.bb"));
         users.put("cc", new User("cc", "333333", "cc@cc.cc"));
